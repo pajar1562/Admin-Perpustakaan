@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Perpustakaan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="Lumiere Grimoire, Caio Trindade.jpeg" alt="Logo Perpustakaan">
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="transaksi.html">Transaksi</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+<section id="transaksi">
+            <h2>Form Transaksi</h2>
+            <form id="formTransaksi">
+                <input type="text" id="nama" placeholder="Nama Transaksi">
+                <input type="number" id="jumlah" placeholder="Jumlah">
+                <select id="kategori">
+                    <option value="">Pilih Kategori</option>
+                    <option value="Peminjaman">Peminjaman</option>
+                    <option value="Pengembalian">Pengembalian</option>
+                </select>
+                <button type="submit">Simpan</button>
+                <p id="errorMsg" class="error"></p>
+            </form>
+            <h3>Daftar Transaksi</h3>
+            <table>
+                <thead>
+                    <tr><th>Nama</th><th>Jumlah</th><th>Kategori</th></tr>
+                </thead>
+                <tbody id="daftarTransaksi"></tbody>
+            </table>
+        </section>
+    <footer>
+        &copy; 2025 Aplikasi Perpustakaan
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

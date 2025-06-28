@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Perpustakaan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="Lumiere Grimoire, Caio Trindade.jpeg" alt="Logo Perpustakaan">
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="transaksi.html">Transaksi</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+ <section id="login" style="display: flex; justify-content: center; align-items: center; min-height: 60vh;">
+    <div style="background: #f9f9f9; padding: 30px; border-radius: 15px; box-shadow: 0 0 15px rgba(0,0,0,0.1); max-width: 400px; width: 100%;">
+        <h2 style="text-align: center;">🔐 Login Admin</h2>
+        <p style="text-align: center; font-size: 14px; color: #555;">Silakan login untuk melanjutkan</p>
+        <form id="formLogin">
+            <label for="username">👤 Username</label>
+            <input type="text" id="username" placeholder="Masukkan username">
+            
+            <label for="password">🔒 Password</label>
+            <input type="password" id="password" placeholder="Masukkan password">
+
+            <button type="submit" style="background: #4CAF50; color: white; border: none; padding: 10px; width: 100%; font-size: 16px; border-radius: 5px; margin-top: 10px;">Login</button>
+            <p id="loginErrorMsg" class="error" style="text-align: center; margin-top: 10px;"></p>
+        </form>
+    </div>
+</section>
+
+    <footer>
+        &copy; 2025 Aplikasi Perpustakaan
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
